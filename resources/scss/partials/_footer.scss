@@ -1,0 +1,83 @@
+@use 'variables' as *;
+
+footer {
+
+    .my_container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+
+
+    }
+
+    .contact_us {
+        background-image: url(../img/footer-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .my_container {
+            background-image: url(../img/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+
+        .row {
+            width: 100%;
+            margin: auto;
+
+            .col {
+                padding: 2rem 0;
+            }
+        }
+    }
+
+
+    h3 {
+        color: $light;
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $lighter;
+    }
+
+    .call_to_action {
+        background-color: $darker;
+        padding: 1.5rem 0;
+
+        .my_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                padding: 0.5rem 1.5rem;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                color: $light;
+                background-color: transparent;
+                border: 2px solid $primary;
+
+                &:hover {
+                    background-color: $primary;
+                    border: 2px solid $dark;
+                }
+            }
+
+            h3 {
+                color: $primary;
+                padding: 0 0.25rem;
+            }
+
+            a {
+                display: inline-block;
+                padding: 0 0.5rem;
+            }
+        }
+    }
+}

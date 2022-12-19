@@ -1,0 +1,93 @@
+@use 'variables' as *;
+
+main {
+
+    .banner {
+        height: 500px;
+        background-image: url(../img/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container {
+            position: relative;
+            height: 100%;
+
+            h3 {
+                padding: 0.5rem 1rem;
+                width: max-content;
+                color: $light;
+                background-color: $primary;
+                position: absolute;
+                bottom: -30px;
+            }
+        }
+
+    }
+
+    .jumbotron {
+
+        background-color: $dark;
+        padding: 2rem 0;
+
+        .row {
+            padding: 1rem;
+
+            img {
+                width: 200px;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+
+            p {
+                color: $light;
+                padding: 1rem 0;
+            }
+        }
+
+
+        .load_more {
+
+
+            h3 {
+                padding: 0.5rem 1rem;
+                margin: auto;
+                width: max-content;
+                color: $light;
+                background-color: $primary;
+            }
+        }
+
+
+    }
+
+    .my-container {
+        background-color: $primary;
+        padding: 1rem 0;
+
+        .row {
+            color: $light;
+            height: 120px;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+            .col {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                img {
+                    width: 50px;
+                }
+
+                h3 {
+                    font-size: 16px;
+                    padding: 0 0.5rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+}

@@ -1,1 +1,18 @@
-@import '~bootstrap/scss/bootstrap'
+@use './partials/header';
+@use './partials/main';
+@use './partials/footer';
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

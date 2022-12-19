@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+header {
+    padding: 2rem 0;
+
+    .my_container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar {
+        a {
+            display: inline-block;
+            text-transform: uppercase;
+            color: $dark;
+            text-decoration: none;
+            padding: 1.5rem 1rem;
+
+            &:hover {
+                color: $primary;
+                border-bottom: 2px solid $primary;
+            }
+
+            &.active {
+                color: $primary;
+                border-bottom: 2px solid $primary;
+
+            }
+        }
+
+
+    }
+}
